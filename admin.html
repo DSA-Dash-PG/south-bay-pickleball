@@ -863,10 +863,14 @@ function buildAdminDivSelect(onchange) {
 }
 
 // Override showAdminPanel to lazy-load panels
-const _origShowAdminPanel = showAdminPanel;
 function showAdminPanel(id) {
-  _origShowAdminPanel(id);
-  if (id==='schedule')  { injectDivSelect('schedule',  'renderAdminSchedule()'); renderAdminSchedule(); }
+  document.querySelectorAll('.admin-panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.admin-nav-item').forEach(i=>i.classList.remove('active'));
+  const panel = document.getElementById('apanel-'+id);
+  const navItem = document.querySelector(`[data-apanel="${id}"]`);
+  if (panel) panel.classList.add('active');
+  if (navItem) navItem.classList.add('active');
+  if (id==='schedule')  { injectDivSelect('schedule',  'renderAdminSchedule()');  renderAdminSchedule(); }
   if (id==='standings') { injectDivSelect('standings', 'renderAdminStandings()'); renderAdminStandings(); }
   if (id==='teams')     { renderTeamsAdmin(); }
   if (id==='players')   { switchPlayerTab('pending'); }
