@@ -17,7 +17,7 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--text-dark);overflow-x:hidden}
+body{font-family:'DM Sans',sans-serif;background:#0d2235;color:var(--text-dark);overflow-x:hidden}
 
 /* ── NAV ── */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--nav-h);background:rgba(14,30,46,0.95);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;padding:0 2rem;border-bottom:1px solid rgba(91,168,206,0.25)}
@@ -365,14 +365,14 @@ footer p{font-size:.82rem;color:rgba(247,237,216,.45);line-height:1.6}
 @media(max-width:600px){.rules-grid{grid-template-columns:1fr}section{padding:4rem 0}.footer-inner{grid-template-columns:1fr}.standings-table{font-size:.78rem}.standings-table th,.standings-table td{padding:.5rem .4rem}}
 
 
-.week-accordion{margin-bottom:.85rem;border-radius:10px;box-shadow:0 3px 14px rgba(14,30,46,.08);overflow:hidden}
-.week-acc-btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding:.9rem 1.2rem;background:var(--white);border:none;cursor:pointer;font-family:'DM Sans',sans-serif;border-radius:10px;text-align:left}
-.week-acc-btn.open{border-radius:10px 10px 0 0;background:linear-gradient(135deg,var(--sand),var(--white))}
-.week-acc-btn:hover{background:var(--sand)}
+.week-accordion{margin-bottom:.85rem;border-radius:10px;box-shadow:0 3px 14px rgba(0,0,0,.3);overflow:hidden}
+.week-acc-btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding:.9rem 1.2rem;background:rgba(255,255,255,.06);border:none;cursor:pointer;font-family:'DM Sans',sans-serif;border-radius:10px;text-align:left;color:var(--sand)}
+.week-acc-btn.open{border-radius:10px 10px 0 0;background:rgba(255,255,255,.1)}
+.week-acc-btn:hover{background:rgba(255,255,255,.1)}
 .week-acc-chevron{font-size:.65rem;color:var(--text-light);flex-shrink:0}
-.week-acc-body{padding:.85rem 1rem 1rem;background:var(--white);border-radius:0 0 10px 10px;border-top:1px solid var(--sand-dark)}
+.week-acc-body{padding:.85rem 1rem 1rem;background:rgba(255,255,255,.04);border-radius:0 0 10px 10px;border-top:1px solid rgba(91,168,206,.2)}
 .week-match-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:.85rem}
-.match-card-aloha{background:var(--white);border:1px solid var(--sand-dark);border-radius:10px;padding:1.1rem 1.2rem;box-shadow:0 2px 10px rgba(14,30,46,.06);transition:transform .2s;border-top:3px solid var(--ocean-mid)}
+.match-card-aloha{background:rgba(255,255,255,.06);border:1px solid rgba(91,168,206,.2);border-radius:10px;padding:1.1rem 1.2rem;box-shadow:0 2px 10px rgba(14,30,46,.06);transition:transform .2s;border-top:3px solid var(--ocean-mid)}
 .match-card-aloha:hover{transform:translateY(-2px)}
 .match-card-aloha.has-score{border-top-color:var(--kelp)}
 .week-pill{background:linear-gradient(135deg,var(--ocean-deep),var(--ocean-mid));color:#fff;font-size:.75rem;padding:.35rem 1rem;border-radius:20px;white-space:nowrap}
@@ -440,14 +440,14 @@ footer p{font-size:.82rem;color:rgba(247,237,216,.45);line-height:1.6}
   <a href="register.html">Register</a><a href="contact.html">Contact</a>
 </div>
 
-<section style="background:linear-gradient(180deg,var(--sand) 0%,var(--white) 100%);min-height:80vh;padding:4rem 0">
+<section style="background:#0d2235;min-height:80vh;padding:4rem 0">
   <div class="container">
-    <div class="section-label">Summer 2026 Season</div>
-    <h2 class="section-title">Match Schedule</h2>
-    <p class="section-intro" style="margin-bottom:1.5rem">Most matches on Sunday mornings/afternoons. Check in 30 min before start.</p>
+    <div class="section-label" style="color:var(--ocean-light)">Summer 2026 Season</div>
+    <h2 class="section-title light">Match Schedule</h2>
+    <p class="section-intro light" style="margin-bottom:1.5rem">Most matches on Sunday mornings/afternoons. Check in 30 min before start.</p>
     <div id="division-selector-container" style="margin-bottom:2rem"></div>
     <div id="schedule-container">
-      <div style="text-align:center;padding:3rem;color:var(--text-light)">Select a division above to view the schedule.</div>
+      <div style="text-align:center;padding:3rem;color:var(--text-light)" style="color:var(--ocean-foam)">Select a division above to view the schedule.</div>
     </div>
   </div>
 </section>

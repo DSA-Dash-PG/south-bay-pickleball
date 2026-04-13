@@ -361,15 +361,15 @@ footer p{font-size:.82rem;color:rgba(247,237,216,.45);line-height:1.6}
 /* ── DIVISION SELECTOR ── */
 .division-selector{margin-bottom:1.5rem}
 .season-banner{display:flex;align-items:center;gap:.75rem;margin-bottom:1rem}
-.season-badge{font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:.08em;background:var(--ocean-deep);color:var(--sunset-gold);padding:.3rem .9rem;border-radius:3px}
-.season-year{font-size:.8rem;color:var(--text-light)}
+.season-badge{font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:.08em;background:rgba(255,255,255,.1);color:var(--sunset-gold);padding:.3rem .9rem;border-radius:3px}
+.season-year{font-size:.8rem;color:var(--ocean-foam)}
 .div-filter-row{display:flex;gap:1.5rem;flex-wrap:wrap;align-items:flex-start}
 .div-group{display:flex;flex-direction:column;gap:.4rem}
-.div-group-label{font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;font-weight:500;color:var(--text-light);margin-bottom:.2rem}
+.div-group-label{font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;font-weight:500;color:var(--ocean-foam);margin-bottom:.2rem}
 .div-pills{display:flex;gap:.4rem;flex-wrap:wrap}
-.div-pill{padding:.4rem 1rem;border:1px solid var(--sand-dark);background:var(--white);border-radius:100px;font-family:'DM Sans',sans-serif;font-size:.78rem;font-weight:500;color:var(--text-mid);cursor:pointer;transition:all .15s}
-.div-pill:hover{border-color:var(--ocean-mid);color:var(--ocean-mid)}
-.div-pill.active{background:var(--ocean-mid);border-color:var(--ocean-mid);color:white}
+.div-pill{padding:.4rem 1rem;border:1px solid rgba(91,168,206,.3);background:rgba(255,255,255,.06);border-radius:100px;font-family:'DM Sans',sans-serif;font-size:.78rem;font-weight:500;color:var(--ocean-foam);cursor:pointer;transition:all .15s}
+.div-pill:hover{border-color:var(--ocean-light);color:var(--ocean-light)}
+.div-pill.active{background:var(--ocean-mid);border-color:var(--ocean-light);color:white}
 
 /* ── SEASON BAR (homepage) ── */
 .season-bar{background:var(--ocean-deep);padding:1.5rem 2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}

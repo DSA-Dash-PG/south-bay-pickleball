@@ -17,7 +17,7 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--text-dark);overflow-x:hidden}
+body{font-family:'DM Sans',sans-serif;background:#0d2235;color:var(--text-dark);overflow-x:hidden}
 
 /* ── NAV ── */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--nav-h);background:rgba(14,30,46,0.95);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;padding:0 2rem;border-bottom:1px solid rgba(91,168,206,0.25)}
@@ -194,11 +194,11 @@ section{padding:5rem 0}
 .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--sunset-gold);background:rgba(255,255,255,.12)}
 .form-group input::placeholder,.form-group textarea::placeholder{color:rgba(255,255,255,.25)}
 .form-group textarea{resize:vertical;min-height:80px}
-.light-form .form-group label{color:var(--text-light)}
-.light-form .form-group input,.light-form .form-group select,.light-form .form-group textarea{background:var(--sand);border:1px solid var(--sand-dark);color:var(--text-dark)}
-.light-form .form-group input::placeholder,.light-form .form-group textarea::placeholder{color:var(--text-light)}
-.light-form .form-group input:focus,.light-form .form-group select:focus,.light-form .form-group textarea:focus{border-color:var(--sunset-orange);background:var(--white)}
-.light-form .form-group select option{background:white;color:var(--text-dark)}
+.light-form .form-group label{color:var(--ocean-foam)}
+.light-form .form-group input,.light-form .form-group select,.light-form .form-group textarea{background:rgba(255,255,255,.08);border:1px solid rgba(91,168,206,.3);color:var(--sand)}
+.light-form .form-group input::placeholder,.light-form .form-group textarea::placeholder{color:rgba(91,168,206,.5)}
+.light-form .form-group input:focus,.light-form .form-group select:focus,.light-form .form-group textarea:focus{border-color:var(--sunset-gold);background:rgba(255,255,255,.12)}
+.light-form .form-group select option{background:#0d2235;color:var(--sand)}
 .waiver-box{background:rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.1);border-radius:3px;padding:1.2rem;max-height:180px;overflow-y:auto;margin-bottom:1rem;font-size:.75rem;line-height:1.6;color:rgba(247,237,216,.55)}
 .waiver-check{display:flex;align-items:flex-start;gap:.75rem;margin-bottom:1.5rem}
 .waiver-check input[type=checkbox]{width:18px;height:18px;flex-shrink:0;margin-top:1px;accent-color:var(--sunset-gold)}
@@ -224,7 +224,7 @@ section{padding:5rem 0}
 /* ── CONTACT ── */
 .contact-section{background:var(--sand)}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;margin-top:3rem}
-.contact-form-card{background:var(--white);border:1px solid var(--sand-dark);border-radius:6px;padding:2rem}
+.contact-form-card{background:rgba(255,255,255,.05);border:1px solid rgba(91,168,206,.25);border-radius:6px;padding:2rem}
 .contact-info h3{font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:.04em;color:var(--text-dark);margin-bottom:1rem}
 .contact-info p{font-size:.88rem;line-height:1.7;color:var(--text-mid);margin-bottom:2rem}
 .contact-detail{display:flex;align-items:flex-start;gap:1rem;margin-bottom:1.2rem;padding-bottom:1.2rem;border-bottom:1px solid var(--sand-dark)}
@@ -395,30 +395,21 @@ footer p{font-size:.82rem;color:rgba(247,237,216,.45);line-height:1.6}
   <a href="register.html">Register</a><a href="contact.html">Contact</a>
 </div>
 
-<section class="contact-section" style="min-height:80vh;padding:5rem 0">
-  <div class="container">
-    <div class="section-label">Get in Touch</div>
-    <h2 class="section-title">Contact Us</h2>
-    <div class="contact-grid">
-      <div class="contact-info">
-        <h3>South Bay<br>Pickleball League</h3>
-        <p>Questions about registration, rules, scheduling? Drop us a message.</p>
-        <div class="contact-detail"><div class="contact-detail-icon">&#128205;</div><div class="contact-detail-text"><strong>Location</strong>South Bay, Los Angeles, CA</div></div>
-        <div class="contact-detail"><div class="contact-detail-icon">&#128197;</div><div class="contact-detail-text"><strong>Season 1 Invitational</strong>Starts May 31, 2026 &middot; Registration Open</div></div>
-        <div class="contact-detail"><div class="contact-detail-icon">&#127919;</div><div class="contact-detail-text"><strong>Format</strong>Ladies 3.0 &amp; 3.5+ &middot; Mens 3.5+ &middot; Mixed 3.5+</div></div>
+<section class="contact-section" style="background:#0d2235;min-height:80vh;padding:5rem 0">
+  <div class="container" style="max-width:640px">
+    <h2 class="section-title light">South Bay Pickleball League</h2>
+    <p class="section-intro light" style="margin-bottom:2.5rem">Questions about registration, rules, scheduling? Drop us a message.</p>
+    <div class="contact-form-card light-form">
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:var(--white);margin-bottom:.3rem">Send a Message</div>
+      <div style="font-size:.8rem;color:var(--ocean-foam);margin-bottom:1.5rem">We'll respond within 24 hours</div>
+      <div class="form-row">
+        <div class="form-group"><label>Name</label><input type="text" id="c-name" placeholder="Your name"></div>
+        <div class="form-group"><label>Email</label><input type="email" id="c-email" placeholder="your@email.com"></div>
       </div>
-      <div class="contact-form-card light-form">
-        <div style="font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:var(--text-dark);margin-bottom:.3rem">Send a Message</div>
-        <div style="font-size:.8rem;color:var(--text-light);margin-bottom:1.5rem">We'll respond within 24 hours</div>
-        <div class="form-row">
-          <div class="form-group"><label>Name</label><input type="text" id="c-name" placeholder="Your name"></div>
-          <div class="form-group"><label>Email</label><input type="email" id="c-email" placeholder="your@email.com"></div>
-        </div>
-        <div class="form-group"><label>Subject</label>
-          <select id="c-subject"><option>General Question</option><option>Registration Help</option><option>Rules &amp; Format</option><option>Score Dispute</option><option>Roster Change</option><option>Other</option></select></div>
-        <div class="form-group"><label>Message</label><textarea id="c-message" placeholder="Your message..." style="min-height:120px"></textarea></div>
-        <button class="btn btn-orange" onclick="submitContact()" style="width:100%">Send Message &#127754;</button>
-      </div>
+      <div class="form-group"><label>Subject</label>
+        <select id="c-subject"><option>General Question</option><option>Registration Help</option><option>Rules &amp; Format</option><option>Score Dispute</option><option>Roster Change</option><option>Other</option></select></div>
+      <div class="form-group"><label>Message</label><textarea id="c-message" placeholder="Your message..." style="min-height:120px"></textarea></div>
+      <button class="btn btn-orange" onclick="submitContact()" style="width:100%">Send Message &#127754;</button>
     </div>
   </div>
 </section>

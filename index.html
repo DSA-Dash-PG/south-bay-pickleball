@@ -479,11 +479,7 @@ footer p{font-size:.82rem;color:rgba(247,237,216,.45);line-height:1.6}
   <div class="hero-content">
     <div class="hero-eyebrow">South Bay &middot; Los Angeles &middot; Est. 2026</div>
     <h1 class="hero-title">South Bay<br><span>Pickleball</span><br>League</h1>
-    <p class="hero-subtitle">Where the courts meet the coast</p>
-    <div class="hero-badges">
-      <span class="hero-badge">Manhattan Beach</span><span class="hero-badge">Hermosa Beach</span>
-      <span class="hero-badge">Redondo Beach</span><span class="hero-badge">Palos Verdes</span><span class="hero-badge">Torrance</span>
-    </div>
+    <p class="hero-subtitle">Where the coast meets the courts</p>
     <div class="hero-btns">
       <a href="register.html" class="btn btn-primary">Register Now &rarr;</a>
       <a href="teams.html" class="btn btn-outline">Meet the Teams</a>
@@ -494,15 +490,15 @@ footer p{font-size:.82rem;color:rgba(247,237,216,.45);line-height:1.6}
 <div class="season-bar">
   <div class="season-card">
     <div class="season-card-label">Season</div>
-    <div class="season-card-value">Season 1 Invitational &middot; Summer 2026</div>
+    <div class="season-card-value">Summer League &middot; May 31, 2026</div>
   </div>
   <div class="season-card">
     <div class="season-card-label">Divisions</div>
-    <div class="season-card-value">Women&rsquo;s 3.0+ &middot; Mixed Doubles 3.5+</div>
+    <div class="season-card-value" style="line-height:1.6">Women&rsquo;s 3.0 &amp; 3.5+<br>Mixed Doubles 3.0 &amp; 3.5+<br>Men&rsquo;s 3.5+<br><span style="color:rgba(93,202,165,.7);font-size:.8em">Junior League coming soon!</span></div>
   </div>
   <div class="season-card">
     <div class="season-card-label">Format</div>
-    <div class="season-card-value">8-Week Season + Playoffs</div>
+    <div class="season-card-value">7-Week Season + Playoffs</div>
   </div>
   <div class="season-card">
     <div class="season-card-label">Start Date</div>
@@ -515,32 +511,16 @@ footer p{font-size:.82rem;color:rgba(247,237,216,.45);line-height:1.6}
 </div>
 <section style="background:var(--white);padding:4rem 0">
   <div class="container">
-    <div class="section-label">Next Up</div>
-    <h2 class="section-title">Upcoming Matches</h2>
-    <p class="section-intro" style="margin-bottom:2rem">Next match week &mdash; check back after each Sunday for results.</p>
-    <div id="home-upcoming"></div>
-    <div style="text-align:center;margin-top:2rem"><a href="schedule.html" class="btn btn-primary">Full Schedule &rarr;</a></div>
-  </div>
-</section>
-<section style="background:var(--sand);padding:4rem 0">
-  <div class="container">
-    <div class="section-label">Latest Updates</div>
-    <h2 class="section-title">League News</h2>
-    <div class="news-grid" id="news-grid" style="margin-top:2rem"></div>
-  </div>
-</section>
-<section style="background:var(--white);padding:4rem 0">
-  <div class="container">
     <div class="about-grid">
       <div>
         <div class="section-label">About the League</div>
         <h2 class="section-title">South Bay's Premier Pickleball Community</h2>
-        <p class="section-intro" style="max-width:100%;margin-bottom:2rem">From Palos Verdes to Manhattan Beach, SBPL brings together players who love the game and the beach city lifestyle.</p>
+        <p class="section-intro" style="max-width:100%;margin-bottom:2rem">From Manhattan Beach to Carson to Palos Verdes, SBPL brings together players who love the game and the easy going beach city vibes.</p>
         <div class="format-cards">
           <div class="format-card"><div class="format-card-icon">&#127942;</div><div class="format-card-title">Round Robin Format</div><p>WD, MD, and Mixed Doubles each round.</p></div>
-          <div class="format-card"><div class="format-card-icon">&#128197;</div><div class="format-card-title">8-Week Season</div><p>Top 4 advance to playoffs. Weekly standings updated.</p></div>
-          <div class="format-card"><div class="format-card-icon">&#127919;</div><div class="format-card-title">Skill Levels</div><p>Ladies 3.0 &amp; 3.5+ &middot; Mens 3.5+ &middot; Mixed 3.5+</p></div>
-          <div class="format-card"><div class="format-card-icon">&#127754;</div><div class="format-card-title">Beach City Vibe</div><p>Fun, friendly competition. South Bay community first.</p></div>
+          <div class="format-card"><div class="format-card-icon">&#128197;</div><div class="format-card-title">7-Week Season + Playoffs</div><p>Top 4 advance to playoffs. Weekly standings updated.</p></div>
+          <div class="format-card"><div class="format-card-icon">&#127919;</div><div class="format-card-title">Skill Levels</div><p>Women's 3.0 &amp; 3.5+ &middot; Men's 3.5+ &middot; Mixed 3.0 &amp; 3.5+</p></div>
+          <div class="format-card"><div class="format-card-icon">&#127754;</div><div class="format-card-title">Beach City Vibe</div><p>South Bay community first. Fun, friendly competition.</p></div>
         </div>
       </div>
       <div>
@@ -560,6 +540,22 @@ footer p{font-size:.82rem;color:rgba(247,237,216,.45);line-height:1.6}
         </div>
       </div>
     </div>
+  </div>
+</section>
+<section id="upcoming-section" style="background:var(--white);padding:4rem 0;display:none">
+  <div class="container">
+    <div class="section-label">Next Up</div>
+    <h2 class="section-title">Upcoming Matches</h2>
+    <p class="section-intro" style="margin-bottom:2rem">Next match week &mdash; check back after each Sunday for results.</p>
+    <div id="home-upcoming"></div>
+    <div style="text-align:center;margin-top:2rem"><a href="schedule.html" class="btn btn-primary">Full Schedule &rarr;</a></div>
+  </div>
+</section>
+<section id="news-section" style="background:var(--sand);padding:4rem 0;display:none">
+  <div class="container">
+    <div class="section-label">Latest Updates</div>
+    <h2 class="section-title">League News</h2>
+    <div class="news-grid" id="news-grid" style="margin-top:2rem"></div>
   </div>
 </section>
 
@@ -597,18 +593,23 @@ footer p{font-size:.82rem;color:rgba(247,237,216,.45);line-height:1.6}
 <div class="toast" id="toast"></div>
 <script src="shared.js"></script>
 <script>
-// News
-renderNews();
+// News — only show section if there are news items
+(async function() {
+  const season = await getActiveSeason();
+  await renderNews(season ? season.id : null);
+  const newsSection = document.getElementById('news-section');
+  const newsGrid = document.getElementById('news-grid');
+  if (newsSection && newsGrid && newsGrid.children.length > 0) {
+    newsSection.style.display = 'block';
+  }
+})();
 
-// Upcoming matches — v2: find next incomplete week across all divisions of active season
+// Upcoming matches — only show section if there is an active season
 (async function() {
   const grid = document.getElementById('home-upcoming');
   if (!grid) return;
   const season = await getActiveSeason();
-  if (!season) {
-    grid.innerHTML = '<p style="color:var(--text-light)">No active season.</p>';
-    return;
-  }
+  if (!season) return; // section stays hidden
   const divisions = await getDivisions(season.id);
   if (!divisions.length) {
     grid.innerHTML = '<p style="color:var(--text-light)">No divisions set up yet.</p>';
@@ -630,6 +631,8 @@ renderNews();
     });
     if (nextWeek) {
       found = true;
+      const upcomingSection = document.getElementById('upcoming-section');
+      if (upcomingSection) upcomingSection.style.display = 'block';
       const weekMatches = matches.filter(m => m.week_index === nextWeek.week_index);
       const dateStr = nextWeek.match_date
         ? new Date(nextWeek.match_date + 'T12:00:00').toLocaleDateString('en-US', {weekday:'long', month:'long', day:'numeric'})

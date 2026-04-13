@@ -17,7 +17,7 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--text-dark);overflow-x:hidden}
+body{font-family:'DM Sans',sans-serif;background:#0d2235;color:var(--text-dark);overflow-x:hidden}
 
 /* ── NAV ── */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--nav-h);background:rgba(14,30,46,0.95);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;padding:0 2rem;border-bottom:1px solid rgba(91,168,206,0.25)}
@@ -119,11 +119,11 @@ section{padding:5rem 0}
 .tab-btn.active{background:var(--ocean-mid);border-color:var(--ocean-mid);color:white}
 .tab-btn:hover:not(.active){border-color:var(--ocean-mid);color:var(--ocean-mid)}
 .standings-table{width:100%;border-collapse:collapse}
-.standings-table th{font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;font-weight:500;color:var(--text-light);padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--sand-dark)}
-.standings-table td{padding:.85rem .8rem;font-size:.88rem;border-bottom:1px solid rgba(232,213,176,.6);color:var(--text-dark)}
-.standings-table tr:hover td{background:rgba(245,166,35,.06)}
+.standings-table th{font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;font-weight:500;color:var(--ocean-foam);padding:.6rem .8rem;text-align:left;border-bottom:2px solid rgba(91,168,206,.3)}
+.standings-table td{padding:.85rem .8rem;font-size:.88rem;border-bottom:1px solid rgba(91,168,206,.15);color:var(--sand)}
+.standings-table tr:hover td{background:rgba(245,166,35,.08)}
 .standings-table .pts{font-weight:600;color:var(--sunset-deep)}
-.standings-table .top-row td{background:rgba(245,166,35,.07)}
+.standings-table .top-row td{background:rgba(245,166,35,.1)}
 
 /* ── SCHEDULE ── */
 .schedule-grid{display:grid;gap:1rem;margin-top:2.5rem}
@@ -395,15 +395,15 @@ footer p{font-size:.82rem;color:rgba(247,237,216,.45);line-height:1.6}
   <a href="register.html">Register</a><a href="contact.html">Contact</a>
 </div>
 
-<section style="background:var(--sand);min-height:80vh;padding:4rem 0">
+<section style="background:#0d2235;min-height:80vh;padding:4rem 0">
   <div class="container">
-    <div class="section-label">Season 1 Invitational &middot; Summer 2026</div>
-    <h2 class="section-title">Standings</h2>
+    <div class="section-label" style="color:var(--ocean-light)">Season 1 Invitational &middot; Summer 2026</div>
+    <h2 class="section-title light">Standings</h2>
     <div id="division-selector-container" style="margin:1.5rem 0"></div>
     <div id="standings-content">
-      <div style="text-align:center;padding:3rem;color:var(--text-light)">Select a division above to view standings.</div>
+      <div style="text-align:center;padding:3rem;color:var(--text-light)" style="color:var(--ocean-foam)">Select a division above to view standings.</div>
     </div>
-    <p style="font-size:.75rem;color:var(--text-light);margin-top:.8rem"><strong>Point System:</strong> Win=2 pts &middot; Tie=1 pt &middot; Loss=0 pts &nbsp;|&nbsp; <strong>Tiebreaker:</strong> PTS &rarr; GW &rarr; PS &rarr; DIFF</p>
+    <p style="font-size:.75rem;color:var(--ocean-foam);margin-top:.8rem"><strong>Point System:</strong> Win=2 pts &middot; Tie=1 pt &middot; Loss=0 pts &nbsp;|&nbsp; <strong>Tiebreaker:</strong> PTS &rarr; GW &rarr; PS &rarr; DIFF</p>
   </div>
 </section>
 
@@ -448,7 +448,7 @@ footer p{font-size:.82rem;color:rgba(247,237,216,.45);line-height:1.6}
   const divisions = await getDivisions(season.id);
   async function showStandings(divId) {
     document.getElementById('standings-content').innerHTML = `
-      <div style="overflow-x:auto;background:var(--white);border-radius:6px;border:1px solid var(--sand-dark);margin-top:1rem">
+      <div style="overflow-x:auto;background:rgba(255,255,255,.04);border-radius:6px;border:1px solid rgba(91,168,206,.2);margin-top:1rem">
         <table class="standings-table" style="min-width:600px">
           <thead><tr><th>#</th><th>Team</th><th>RDS</th><th>W</th><th>L</th><th>T</th><th>PTS</th><th>GW</th><th>PS</th><th>PA</th><th>DIFF</th></tr></thead>
           <tbody id="standings-body"></tbody>
